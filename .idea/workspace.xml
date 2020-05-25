@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="PepsiDog:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="90206e09-0385-4440-b929-b71350ccb022" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="downloadDocsAutomatically" value="true" />
+        <option name="downloadSourcesAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1c5h0nvF3oOUfJoO9PCFL96fZrW" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/me/arnoldsk/pepsidog/OpStick" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Spigot/plugins" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="me.arnoldsk.pepsidog.SoftSpawnProtection" />
+      <recent name="me.arnoldsk.pepsidog.PlayerBeds" />
+      <recent name="me.arnoldsk.pepsidog.CustomDrops" />
+      <recent name="me.arnoldsk.pepsidog.NameColors" />
+      <recent name="me.arnoldsk.pepsidog.OpStick" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JAR Application.Spigot">
+    <configuration name="Spigot" type="JarApplication">
+      <option name="JAR_PATH" value="$USER_HOME$/Desktop/Spigot/spigot-1.15.2.jar" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\arnol\Desktop\Spigot\" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <module name="PepsiDog" />
+      <method v="2" />
+    </configuration>
+    <configuration name="PepsiDog build" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="package" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JAR Application.Spigot" />
+      <item itemvalue="Maven.PepsiDog build" />
+    </list>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="90206e09-0385-4440-b929-b71350ccb022" name="Default Changelist" comment="" />
+      <created>1589824141058</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589824141058</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1300" y="348" key="#Project_Structure" timestamp="1589836404146">
+      <screen x="32" y="0" width="3408" height="1440" />
+    </state>
+    <state x="1300" y="348" key="#Project_Structure/32.0.3408.1440@32.0.3408.1440" timestamp="1589836404146" />
+    <state x="1162" y="345" width="1245" height="689" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589829874663">
+      <screen x="32" y="0" width="3408" height="1440" />
+    </state>
+    <state x="1162" y="345" width="1245" height="689" key="#com.intellij.execution.impl.EditConfigurationsDialog/32.0.3408.1440@32.0.3408.1440" timestamp="1589829874663" />
+    <state x="1564" y="395" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1589828784402">
+      <screen x="32" y="0" width="3408" height="1440" />
+    </state>
+    <state x="1564" y="395" key="#com.intellij.ide.macro.MacrosDialog/32.0.3408.1440@32.0.3408.1440" timestamp="1589828784402" />
+    <state x="1521" y="400" key="#com.intellij.ide.util.MemberChooser" timestamp="1590371428454">
+      <screen x="32" y="0" width="3408" height="1440" />
+    </state>
+    <state x="1521" y="400" key="#com.intellij.ide.util.MemberChooser/32.0.3408.1440@32.0.3408.1440" timestamp="1590371428454" />
+    <state x="2245" y="585" width="602" height="289" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1590367586143">
+      <screen x="32" y="0" width="3408" height="1440" />
+    </state>
+    <state x="2245" y="585" width="602" height="289" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/32.0.3408.1440@32.0.3408.1440" timestamp="1590367586143" />
+    <state x="2179" y="473" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1590365065668">
+      <screen x="32" y="0" width="3408" height="1440" />
+    </state>
+    <state x="2179" y="473" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/32.0.3408.1440@32.0.3408.1440" timestamp="1590365065668" />
+    <state x="1488" y="445" key="FileChooserDialogImpl" timestamp="1589829910042">
+      <screen x="32" y="0" width="3408" height="1440" />
+    </state>
+    <state x="1488" y="445" key="FileChooserDialogImpl/32.0.3408.1440@32.0.3408.1440" timestamp="1589829910042" />
+    <state width="1511" height="358" key="GridCell.Tab.0.bottom" timestamp="1590371781054">
+      <screen x="32" y="0" width="3408" height="1440" />
+    </state>
+    <state width="1511" height="358" key="GridCell.Tab.0.bottom/32.0.3408.1440@32.0.3408.1440" timestamp="1590371781054" />
+    <state width="1511" height="358" key="GridCell.Tab.0.center" timestamp="1590371781054">
+      <screen x="32" y="0" width="3408" height="1440" />
+    </state>
+    <state width="1511" height="358" key="GridCell.Tab.0.center/32.0.3408.1440@32.0.3408.1440" timestamp="1590371781054" />
+    <state width="1511" height="358" key="GridCell.Tab.0.left" timestamp="1590371781054">
+      <screen x="32" y="0" width="3408" height="1440" />
+    </state>
+    <state width="1511" height="358" key="GridCell.Tab.0.left/32.0.3408.1440@32.0.3408.1440" timestamp="1590371781054" />
+    <state width="1511" height="358" key="GridCell.Tab.0.right" timestamp="1590371781054">
+      <screen x="32" y="0" width="3408" height="1440" />
+    </state>
+    <state width="1511" height="358" key="GridCell.Tab.0.right/32.0.3408.1440@32.0.3408.1440" timestamp="1590371781054" />
+    <state width="1511" height="296" key="GridCell.Tab.1.bottom" timestamp="1590371781051">
+      <screen x="32" y="0" width="3408" height="1440" />
+    </state>
+    <state width="1511" height="296" key="GridCell.Tab.1.bottom/32.0.3408.1440@32.0.3408.1440" timestamp="1590371781051" />
+    <state width="1511" height="296" key="GridCell.Tab.1.center" timestamp="1590371781051">
+      <screen x="32" y="0" width="3408" height="1440" />
+    </state>
+    <state width="1511" height="296" key="GridCell.Tab.1.center/32.0.3408.1440@32.0.3408.1440" timestamp="1590371781051" />
+    <state width="1511" height="296" key="GridCell.Tab.1.left" timestamp="1590371781051">
+      <screen x="32" y="0" width="3408" height="1440" />
+    </state>
+    <state width="1511" height="296" key="GridCell.Tab.1.left/32.0.3408.1440@32.0.3408.1440" timestamp="1590371781051" />
+    <state width="1511" height="296" key="GridCell.Tab.1.right" timestamp="1590371781051">
+      <screen x="32" y="0" width="3408" height="1440" />
+    </state>
+    <state width="1511" height="296" key="GridCell.Tab.1.right/32.0.3408.1440@32.0.3408.1440" timestamp="1590371781051" />
+    <state x="2300" y="508" key="chooseDestDirectoryDialog" timestamp="1590367389834">
+      <screen x="32" y="0" width="3408" height="1440" />
+    </state>
+    <state x="2300" y="508" key="chooseDestDirectoryDialog/32.0.3408.1440@32.0.3408.1440" timestamp="1590367389834" />
+    <state x="2092" y="341" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1590201738304">
+      <screen x="32" y="0" width="3408" height="1440" />
+    </state>
+    <state x="2092" y="341" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/32.0.3408.1440@32.0.3408.1440" timestamp="1590201738304" />
+    <state x="1233" y="362" key="new project wizard" timestamp="1589840319168">
+      <screen x="32" y="0" width="3408" height="1440" />
+    </state>
+    <state x="1233" y="362" key="new project wizard/32.0.3408.1440@32.0.3408.1440" timestamp="1589840319168" />
+    <state x="1357" y="414" width="700" height="530" key="recent.locations.popup" timestamp="1590157587454">
+      <screen x="32" y="0" width="3408" height="1440" />
+    </state>
+    <state x="1357" y="414" width="700" height="530" key="recent.locations.popup/32.0.3408.1440@32.0.3408.1440" timestamp="1590157587454" />
+    <state x="1364" y="327" width="672" height="677" key="run.anything.popup" timestamp="1590371447865">
+      <screen x="32" y="0" width="3408" height="1440" />
+    </state>
+    <state x="1364" y="327" width="672" height="677" key="run.anything.popup/32.0.3408.1440@32.0.3408.1440" timestamp="1590371447865" />
+    <state x="1379" y="331" width="672" height="678" key="search.everywhere.popup" timestamp="1590369032326">
+      <screen x="32" y="0" width="3408" height="1440" />
+    </state>
+    <state x="1379" y="331" width="672" height="678" key="search.everywhere.popup/32.0.3408.1440@32.0.3408.1440" timestamp="1590369032326" />
+  </component>
+</project>

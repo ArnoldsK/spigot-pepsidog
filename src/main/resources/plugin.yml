@@ -1,0 +1,11 @@
+name: PepsiDog
+version: ${project.version}
+main: me.arnoldsk.pepsidog.PepsiDog
+api-version: 1.13
+authors: [ArnoldsK]
+description: Miscellaneous additions for Pepsi Dog server usage
+website: https://arnoldsk.lv
+commands:
+  opstick:
+    description: Server operator command to get a stick that does everything
+    usage: opstick
