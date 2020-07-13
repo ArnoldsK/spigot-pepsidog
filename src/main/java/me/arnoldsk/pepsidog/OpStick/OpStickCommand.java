@@ -36,6 +36,7 @@ public class OpStickCommand extends CommandBase {
             stick.addUnsafeEnchantment(Enchantment.DAMAGE_ALL, 9000);
             stick.addUnsafeEnchantment(Enchantment.LOOT_BONUS_BLOCKS, 3);
             stick.addUnsafeEnchantment(Enchantment.LOOT_BONUS_MOBS, 3);
+            stick.addUnsafeEnchantment(Enchantment.VANISHING_CURSE, 1);
 
             player.getInventory().addItem(stick);
         }
