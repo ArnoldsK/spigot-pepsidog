@@ -154,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613858573082</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Allow all whereis">
+      <created>1613858675478</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1613858675478</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -173,6 +180,7 @@
     <MESSAGE value="OP stick to be used by OPs only" />
     <MESSAGE value="Remove player beds" />
     <MESSAGE value="WhereIsCommand" />
-    <option name="LAST_COMMIT_MESSAGE" value="WhereIsCommand" />
+    <MESSAGE value="Allow all whereis" />
+    <option name="LAST_COMMIT_MESSAGE" value="Allow all whereis" />
   </component>
 </project>

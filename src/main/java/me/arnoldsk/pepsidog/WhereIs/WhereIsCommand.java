@@ -39,12 +39,13 @@ public class WhereIsCommand extends CommandBase {
         });
 
         // Validate player
-        if (targetPlayerRef == null) {
-            player.sendMessage(ChatColor.RED + "Target player is not found");
+        Player targetPlayer = targetPlayerRef.get();
+
+        if (targetPlayer == null) {
+            player.sendMessage(ChatColor.RED + "Target player not found");
             return false;
         }
 
-        Player targetPlayer = targetPlayerRef.get();
         Location location = targetPlayer.getLocation();
 
         player.sendMessage(
