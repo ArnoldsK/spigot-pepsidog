@@ -21,25 +21,26 @@ public class OpStickCommand extends CommandBase {
 
         if (!player.isOp()) {
             player.sendMessage(ChatColor.RED + "This is a server operator command");
-        } else {
-            // Create a custom stick
-            ItemStack stick = new ItemStack(Material.STICK);
-            ItemMeta meta = stick.getItemMeta();
-
-            // Rename the item
-            if (meta != null) {
-                meta.setDisplayName("Op Stick");
-                stick.setItemMeta(meta);
-            }
-
-            // Add enchantments
-            stick.addUnsafeEnchantment(Enchantment.DAMAGE_ALL, 9000);
-            stick.addUnsafeEnchantment(Enchantment.LOOT_BONUS_BLOCKS, 3);
-            stick.addUnsafeEnchantment(Enchantment.LOOT_BONUS_MOBS, 3);
-            stick.addUnsafeEnchantment(Enchantment.VANISHING_CURSE, 1);
-
-            player.getInventory().addItem(stick);
+            return false;
         }
+
+        // Create a custom stick
+        ItemStack stick = new ItemStack(Material.STICK);
+        ItemMeta meta = stick.getItemMeta();
+
+        // Rename the item
+        if (meta != null) {
+            meta.setDisplayName("Op Stick");
+            stick.setItemMeta(meta);
+        }
+
+        // Add enchantments
+        stick.addUnsafeEnchantment(Enchantment.DAMAGE_ALL, 9000);
+        stick.addUnsafeEnchantment(Enchantment.LOOT_BONUS_BLOCKS, 3);
+        stick.addUnsafeEnchantment(Enchantment.LOOT_BONUS_MOBS, 3);
+        stick.addUnsafeEnchantment(Enchantment.VANISHING_CURSE, 1);
+
+        player.getInventory().addItem(stick);
 
         return true;
     }

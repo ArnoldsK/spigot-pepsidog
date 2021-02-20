@@ -9,3 +9,6 @@ commands:
   opstick:
     description: Server operator command to get a stick that does everything
     usage: opstick
+  whereis:
+    description: Get the location of a player
+    usage: whereis [player]

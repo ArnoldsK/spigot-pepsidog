@@ -5,6 +5,7 @@ import me.arnoldsk.pepsidog.NameColors.NameColorsListener;
 import me.arnoldsk.pepsidog.OpStick.OpStickCommand;
 import me.arnoldsk.pepsidog.OpStick.OpStickListener;
 import me.arnoldsk.pepsidog.SoftSpawnProtection.SoftSpawnProtectionListener;
+import me.arnoldsk.pepsidog.WhereIs.WhereIsCommand;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -48,6 +49,9 @@ public final class PepsiDog extends JavaPlugin {
             switch (command.getName().toLowerCase()) {
                 case "opstick":
                     return new OpStickCommand(this).run(sender, command, label, args);
+
+                case "whereis":
+                    return new WhereIsCommand(this).run(sender, command, label, args);
             }
         } catch (Exception e) {
             sender.sendMessage(ChatColor.DARK_RED + "Error: command failed");
