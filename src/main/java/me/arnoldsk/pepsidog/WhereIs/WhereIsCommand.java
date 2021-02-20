@@ -21,11 +21,6 @@ public class WhereIsCommand extends CommandBase {
     public boolean run(CommandSender sender, org.bukkit.command.Command command, String label, String[] args) {
         Player player = (Player) sender;
 
-        if (!player.isOp()) {
-            player.sendMessage(ChatColor.RED + "This is a server operator command");
-            return false;
-        }
-
         if (args.length == 0) {
             player.sendMessage(ChatColor.RED + "Target player is required");
             return false;

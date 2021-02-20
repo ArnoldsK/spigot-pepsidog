@@ -10,11 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="90206e09-0385-4440-b929-b71350ccb022" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/arnoldsk/pepsidog/WhereIs/WhereIsCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/arnoldsk/pepsidog/OpStick/OpStickCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/arnoldsk/pepsidog/OpStick/OpStickCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/arnoldsk/pepsidog/PepsiDog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/arnoldsk/pepsidog/PepsiDog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/arnoldsk/pepsidog/WhereIs/WhereIsCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/arnoldsk/pepsidog/WhereIs/WhereIsCommand.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613663047014</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="WhereIsCommand">
+      <created>1613858573082</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1613858573082</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -168,6 +172,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="OP stick to be used by OPs only" />
     <MESSAGE value="Remove player beds" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove player beds" />
+    <MESSAGE value="WhereIsCommand" />
+    <option name="LAST_COMMIT_MESSAGE" value="WhereIsCommand" />
   </component>
 </project>
