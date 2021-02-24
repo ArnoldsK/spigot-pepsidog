@@ -12,3 +12,6 @@ commands:
   whereis:
     description: Get the location of a player
     usage: whereis [player]
+  talismanoflight:
+    description: Get the recipe
+    usage: talismanoflight

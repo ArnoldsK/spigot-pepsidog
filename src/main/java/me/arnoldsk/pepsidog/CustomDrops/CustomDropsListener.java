@@ -8,6 +8,7 @@ import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
+import org.bukkit.event.entity.EntityDeathEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
@@ -19,38 +20,36 @@ public class CustomDropsListener implements org.bukkit.event.Listener {
     }
 
     @EventHandler
-    public void onEntityDamageByEntity(EntityDamageByEntityEvent event) {
+    public void onEntityDeath(EntityDeathEvent event) {
         Entity entity = event.getEntity();
-        double finalDamage = event.getFinalDamage();
 
-        // Require the damager to be a player
-        if (!(event.getDamager() instanceof Player)) {
-            return;
-        }
+        // Has to be a dragon
+        if (!(entity instanceof EnderDragon)) return;
 
-        Player player = (Player) event.getDamager();
+        EnderDragon dragon = (EnderDragon) entity;
 
-        // Give an Elytra on dragon kill
-        if (entity instanceof EnderDragon) {
-            EnderDragon dragon = (EnderDragon) entity;
-            double finalHealth = dragon.getHealth() - finalDamage;
+        // Has to be killed by a player
+        Player player = dragon.getKiller();
 
-            if (finalHealth <= 0) {
-                ItemStack elytra = new ItemStack(Material.ELYTRA);
-                ItemMeta meta = elytra.getItemMeta();
+        if (player == null) return;
 
-                // Give the Elytra a custom name
-                if (meta != null) {
-                    meta.setDisplayName("Ender Dragon Elytra");
-                    elytra.setItemMeta(meta);
-                }
-
-                // Give the item
-                player.getInventory().addItem(elytra);
-
-                // Alert
-                plugin.getServer().broadcastMessage(ChatColor.GREEN + player.getName() + " has received Elytra from the Ender Dragon");
-            }
-        }
+        playerAwardElytra(player);
     }
+
+        void playerAwardElytra(Player player) {
+            ItemStack elytra = new ItemStack(Material.ELYTRA);
+            ItemMeta meta = elytra.getItemMeta();
+
+            // Give the Elytra a custom name
+            if (meta != null) {
+                meta.setDisplayName("Ender Dragon Elytra");
+                elytra.setItemMeta(meta);
+            }
+
+            // Give the item
+            player.getInventory().addItem(elytra);
+
+            // Alert
+            plugin.getServer().broadcastMessage(ChatColor.GREEN + player.getName() + " has received Elytra from the Ender Dragon");
+        }
 }
