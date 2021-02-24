@@ -10,14 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="90206e09-0385-4440-b929-b71350ccb022" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/arnoldsk/pepsidog/TalismanOfLight/TalismanOfLightCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/arnoldsk/pepsidog/TalismanOfLight/TalismanOfLightItemData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/arnoldsk/pepsidog/TalismanOfLight/TalismanOfLightListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/arnol.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/arnol.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/arnoldsk/pepsidog/CustomSkulls/CustomSkullsListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/arnoldsk/pepsidog/CustomDrops/CustomDropsListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/arnoldsk/pepsidog/CustomDrops/CustomDropsListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/arnoldsk/pepsidog/PepsiDog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/arnoldsk/pepsidog/PepsiDog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +68,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.24947369" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -182,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613862122628</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Talisman of Light, fix dragon drop">
+      <created>1614127881859</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1614127881859</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -203,6 +205,7 @@
     <MESSAGE value="WhereIsCommand" />
     <MESSAGE value="Allow all whereis" />
     <MESSAGE value="yes" />
-    <option name="LAST_COMMIT_MESSAGE" value="yes" />
+    <MESSAGE value="Talisman of Light, fix dragon drop" />
+    <option name="LAST_COMMIT_MESSAGE" value="Talisman of Light, fix dragon drop" />
   </component>
 </project>
