@@ -69,10 +69,17 @@ public class TalismanOfLightListener implements Listener {
         Collection<? extends Player> players = plugin.getServer().getOnlinePlayers();
 
         players.forEach(player -> {
-            player.getInventory().forEach(itemStack -> {
-                // Check if player has the item
-                if (itemStack == null) return;
-                if (!itemStack.getType().equals(Material.NETHER_STAR)) return;
+            player.getInventory().forEach(item -> {
+                // Require a nether star
+                if (item == null || !item.getType().equals(Material.NETHER_STAR)) return;
+
+                // Require lore
+                if (item.getItemMeta() == null || item.getItemMeta().getLore() == null) return;
+
+                // Compare lore
+                List<String> lore = item.getItemMeta().getLore();
+
+                if (!TalismanOfLightItemData.getLore().equals(lore)) return;
 
                 // Apply night vision
                 playerAddNightVision(player);
