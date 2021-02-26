@@ -11,6 +11,7 @@ import org.bukkit.inventory.ShapedRecipe;
 import org.bukkit.inventory.meta.ItemMeta;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class TalismanOfLightItemData {
     PepsiDog plugin;
@@ -55,10 +56,30 @@ public class TalismanOfLightItemData {
         ArrayList<String> lore = new ArrayList<>();
 
         lore.add("There are darknesses in life and there are lights,");
-        lore.add("and you are one of the lights,");
-        lore.add("the light of all lights");
+        lore.add("and you are one of the lights, the light of all lights");
+        lore.add(ChatColor.DARK_GRAY + "Right click to toggle state");
 
         return lore;
+    }
+
+    public static boolean equalsLore(List<String> lore) {
+        ArrayList<String> talismanLore = getLore();
+
+        // Simple check first
+        if (talismanLore.size() != lore.size()) return false;
+
+        // Compare each line
+        // Using ArrayList.equals fails for some reason, most likely due to custom color
+        for (int i = 0; i < talismanLore.size(); i++) {
+            String a = talismanLore.get(i);
+            String b = lore.get(i);
+
+            if (!a.equals(b)) {
+                return false;
+            }
+        }
+
+        return true;
     }
 
     public ItemStack getItem() {

@@ -21,6 +21,13 @@ public class TalismanOfLightCommand extends CommandBase {
     public boolean run(CommandSender sender, org.bukkit.command.Command command, String label, String[] args) {
         Player player = (Player) sender;
 
+        if (player.isOp() && args.length > 0 && args[0].equalsIgnoreCase("give")) {
+            ItemStack item = new TalismanOfLightItemData(plugin).getItem();
+
+            player.getInventory().addItem(item);
+            return true;
+        }
+
         player.sendMessage("See in the dark. Teleport home. Craft it with 4 iron ingots in corners, 4 golden carrots on each side and a diamond in the middle.");
 
         return true;
