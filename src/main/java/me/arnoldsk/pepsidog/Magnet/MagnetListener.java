@@ -1,8 +1,10 @@
-package me.arnoldsk.pepsidog.TalismanOfLight;
+package me.arnoldsk.pepsidog.Magnet;
 
 import me.arnoldsk.pepsidog.PepsiDog;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
+import org.bukkit.entity.Entity;
+import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -13,18 +15,17 @@ import org.bukkit.event.server.ServerLoadEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.PlayerInventory;
 import org.bukkit.inventory.meta.ItemMeta;
-import org.bukkit.potion.PotionEffect;
-import org.bukkit.potion.PotionEffectType;
+import org.bukkit.util.Vector;
 
 import java.util.Collection;
 import java.util.List;
 
-public class TalismanOfLightListener implements Listener {
+public class MagnetListener implements Listener {
     PepsiDog plugin;
 
     String offStateLabel = " (off)";
 
-    public TalismanOfLightListener(PepsiDog plugin) {
+    public MagnetListener(PepsiDog plugin) {
         this.plugin = plugin;
     }
 
@@ -39,21 +40,21 @@ public class TalismanOfLightListener implements Listener {
         // Get held item
         ItemStack item = event.getItem();
 
-        // Check if the right clicked item is the talisman
-        if (item == null || !isItemTalisman(item)) return;
+        // Check if the right clicked item is the magnet
+        if (item == null || !isItemMagnet(item)) return;
 
         // Require player to be crouched
         Player player = event.getPlayer();
 
         if (!player.isSneaking()) return;
 
-        // Get the current talisman state
+        // Get the current magnet state
         ItemMeta itemMeta = item.getItemMeta();
 
         if (itemMeta == null) return;
 
         String displayName = itemMeta.getDisplayName();
-        boolean isDisabled = isTalismanDisabled(item);
+        boolean isDisabled = isMagnetDisabled(item);
 
         // Adjust name based on the new state
         if (isDisabled) {
@@ -67,7 +68,7 @@ public class TalismanOfLightListener implements Listener {
         item.setItemMeta(itemMeta);
 
         // Send the new state
-        player.sendMessage("Talisman of Light is now " + (isDisabled ? ChatColor.GREEN + "enabled" : ChatColor.RED + "disabled"));
+        player.sendMessage("Magnet is now " + (isDisabled ? ChatColor.GREEN + "enabled" : ChatColor.RED + "disabled"));
     }
 
     /**
@@ -94,9 +95,9 @@ public class TalismanOfLightListener implements Listener {
             List<String> lore = item.getItemMeta().getLore();
 
             // Compare lore
-            if (lore == null || !TalismanOfLightItemData.equalsLore(lore)) continue;
+            if (lore == null || !MagnetItemData.equalsLore(lore)) continue;
 
-            // Disallow using the talisman for crafting
+            // Disallow using the magnet for crafting
             canCraft = false;
         }
 
@@ -112,14 +113,14 @@ public class TalismanOfLightListener implements Listener {
     @EventHandler
     public void onServerListPing(ServerLoadEvent event) {
         // 20 ticks ~ 1 second
-        long delayMs = 60;
+        long delayMs = 20;
 
         this.plugin.getServer().getScheduler().scheduleSyncRepeatingTask(plugin, this::checkPlayerInventories, delayMs, delayMs);
     }
 
-    boolean isItemTalisman(ItemStack item) {
+    boolean isItemMagnet(ItemStack item) {
         // Require a nether star
-        if (item == null || !item.getType().equals(Material.NETHER_STAR)) return false;
+        if (item == null || !item.getType().equals(Material.HEART_OF_THE_SEA)) return false;
 
         // Require lore
         if (item.getItemMeta() == null || item.getItemMeta().getLore() == null) return false;
@@ -127,11 +128,11 @@ public class TalismanOfLightListener implements Listener {
         // Compare lore
         List<String> lore = item.getItemMeta().getLore();
 
-        return TalismanOfLightItemData.equalsLore(lore);
+        return MagnetItemData.equalsLore(lore);
     }
 
-    boolean isTalismanDisabled(ItemStack item) {
-        // Get the current talisman state
+    boolean isMagnetDisabled(ItemStack item) {
+        // Get the current magnet state
         ItemMeta itemMeta = item.getItemMeta();
 
         if (itemMeta == null) return true;
@@ -141,9 +142,9 @@ public class TalismanOfLightListener implements Listener {
         return displayName.endsWith(offStateLabel);
     }
 
-    ItemStack inventoryGetTalisman(PlayerInventory inventory) {
+    ItemStack inventoryGetMagnet(PlayerInventory inventory) {
         for (ItemStack item : inventory) {
-            if (isItemTalisman(item)) {
+            if (isItemMagnet(item)) {
                 return item;
             }
         }
@@ -155,20 +156,33 @@ public class TalismanOfLightListener implements Listener {
         Collection<? extends Player> players = plugin.getServer().getOnlinePlayers();
 
         players.forEach(player -> {
-            ItemStack item = inventoryGetTalisman(player.getInventory());
+            ItemStack item = inventoryGetMagnet(player.getInventory());
 
             // Item exists and not disabled
-            if (item == null || isTalismanDisabled(item)) return;
+            if (item == null || isMagnetDisabled(item)) return;
 
-            // Apply night vision
-            playerAddNightVision(player);
+            // Check for nearby entities
+            playerCheckNearbyEntities(player);
         });
     }
 
-    void playerAddNightVision(Player player) {
-        // 20 ticks ~ 1 second
-        int duration = 300;
+    void playerCheckNearbyEntities(Player player) {
+        double reach = 4;
+        List<Entity> entities = player.getNearbyEntities(reach, reach, reach);
 
-        player.addPotionEffect(new PotionEffect(PotionEffectType.NIGHT_VISION, duration, 0));
+        entities.forEach(entity -> {
+            // Is dropped item
+            if (entity.getType() != EntityType.DROPPED_ITEM) return;
+
+            // Pull towards player
+            float pullStrength = 1f;
+            Vector velocity = player.getLocation().toVector().subtract(entity.getLocation().toVector()).normalize().multiply(pullStrength);
+
+            try {
+                entity.setVelocity(velocity);
+            } catch (Exception e) {
+                // Do nothing
+            }
+        });
     }
 }

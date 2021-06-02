@@ -2,6 +2,9 @@ package me.arnoldsk.pepsidog;
 
 import me.arnoldsk.pepsidog.CustomDrops.CustomDropsListener;
 import me.arnoldsk.pepsidog.CustomSkulls.CustomSkullsListener;
+import me.arnoldsk.pepsidog.Magnet.MagnetCommand;
+import me.arnoldsk.pepsidog.Magnet.MagnetItemData;
+import me.arnoldsk.pepsidog.Magnet.MagnetListener;
 import me.arnoldsk.pepsidog.NameColors.NameColorsListener;
 import me.arnoldsk.pepsidog.OpStick.OpStickCommand;
 import me.arnoldsk.pepsidog.OpStick.OpStickListener;
@@ -38,9 +41,11 @@ public final class PepsiDog extends JavaPlugin {
         pluginManager.registerEvents(new OpStickListener(this), this);
         pluginManager.registerEvents(new TalismanOfLightListener(this), this);
         pluginManager.registerEvents(new CustomSkullsListener(this), this);
+        pluginManager.registerEvents(new MagnetListener(this), this);
 
         // Add recipes
         getServer().addRecipe(new TalismanOfLightItemData(this).getRecipe());
+        getServer().addRecipe(new MagnetItemData(this).getRecipe());
 
         // Alert
         System.out.println("Pepsi Dog plugin is enabled");
@@ -64,6 +69,9 @@ public final class PepsiDog extends JavaPlugin {
 
                 case "talismanoflight":
                     return new TalismanOfLightCommand(this).run(sender, command, label, args);
+
+                case "magnet":
+                    return new MagnetCommand(this).run(sender, command, label, args);
             }
         } catch (Exception e) {
             sender.sendMessage(ChatColor.DARK_RED + "Error: command failed");

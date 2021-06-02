@@ -15,3 +15,6 @@ commands:
   talismanoflight:
     description: Get the recipe
     usage: talismanoflight
+  magnet:
+    description: Get the recipe
+    usage: magnet

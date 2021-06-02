@@ -25,7 +25,7 @@ public class OpStickCommand extends CommandBase {
         }
 
         // Create a custom stick
-        ItemStack stick = new ItemStack(Material.STICK);
+        ItemStack stick = new ItemStack(Material.DEBUG_STICK);
         ItemMeta meta = stick.getItemMeta();
 
         // Rename the item
@@ -35,9 +35,6 @@ public class OpStickCommand extends CommandBase {
         }
 
         // Add enchantments
-        stick.addUnsafeEnchantment(Enchantment.DAMAGE_ALL, 9000);
-        stick.addUnsafeEnchantment(Enchantment.LOOT_BONUS_BLOCKS, 3);
-        stick.addUnsafeEnchantment(Enchantment.LOOT_BONUS_MOBS, 3);
         stick.addUnsafeEnchantment(Enchantment.VANISHING_CURSE, 1);
 
         player.getInventory().addItem(stick);
