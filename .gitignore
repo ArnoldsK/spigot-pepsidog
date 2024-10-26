@@ -1,1 +1,2 @@
-target/
+target/*
+!target/PepsiDog-1.0.jar
