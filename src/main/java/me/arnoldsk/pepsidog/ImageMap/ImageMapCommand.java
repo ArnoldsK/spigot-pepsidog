@@ -13,6 +13,8 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.MapMeta;
 import org.bukkit.map.MapView;
 
+import java.util.logging.Level;
+
 public class ImageMapCommand extends CommandBase {
     PepsiDog plugin;
 
@@ -65,6 +67,10 @@ public class ImageMapCommand extends CommandBase {
 
             player.getInventory().addItem(mapItem);
 
+            // Save the map and url
+            plugin.getMapImagesConfig().set(String.valueOf(mapView.getId()), url);
+            plugin.saveMapImagesConfig();
+
             // Remove one empty map
             if (!isCreative) {
                 this.removeEmptyMap(inventory);
@@ -72,6 +78,7 @@ public class ImageMapCommand extends CommandBase {
             }
         } catch (Exception ex) {
             player.sendMessage(ChatColor.RED + "Unable to get the image URL");
+            plugin.getLogger().log(Level.WARNING, ex.getMessage());
         }
     }
 

@@ -9,8 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90206e09-0385-4440-b929-b71350ccb022" name="Default Changelist" comment="Image map command">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="90206e09-0385-4440-b929-b71350ccb022" name="Default Changelist" comment="Update readme">
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/arnoldsk/pepsidog/ImageMap/ImageMapListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/arnoldsk/pepsidog/ImageMap/ImageMapCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/arnoldsk/pepsidog/ImageMap/ImageMapCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/arnoldsk/pepsidog/PepsiDog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/arnoldsk/pepsidog/PepsiDog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/player-beds.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/PepsiDog-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/PepsiDog-1.0.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -242,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1729941486531</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Update readme">
+      <created>1729941571297</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1729941571297</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -272,6 +284,7 @@
     <MESSAGE value="Add player kill skull drop" />
     <MESSAGE value="Add plugin output to GIT" />
     <MESSAGE value="Image map command" />
-    <option name="LAST_COMMIT_MESSAGE" value="Image map command" />
+    <MESSAGE value="Update readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update readme" />
   </component>
 </project>
