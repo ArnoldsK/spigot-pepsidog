@@ -11,6 +11,7 @@ import org.jetbrains.annotations.NotNull;
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
+import java.io.InputStream;
 import java.lang.ref.SoftReference;
 import java.net.URL;
 
@@ -43,7 +44,9 @@ public class ImageMapRenderer extends MapRenderer {
         // so we can get the latest image.
         ImageIO.setUseCache(false);
 
-        BufferedImage image = ImageIO.read(new URL(url));
+        InputStream stream = new URL(url).openStream();
+        BufferedImage image = ImageIO.read(stream);
+        stream.close();
 
         // Re-enable it with the old value.
         ImageIO.setUseCache(useCache);
