@@ -11,9 +11,7 @@
   <component name="ChangeListManager">
     <list default="true" id="90206e09-0385-4440-b929-b71350ccb022" name="Default Changelist" comment="Update readme">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/arnoldsk/pepsidog/VillagerMove/VillagerMoveListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/arnoldsk/pepsidog/VillagerMove/VillagerMoveListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/PepsiDog-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/PepsiDog-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/arnoldsk/pepsidog/CustomSkulls/CustomSkullsListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/arnoldsk/pepsidog/CustomSkulls/CustomSkullsListener.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -281,7 +279,14 @@
       <option name="project" value="LOCAL" />
       <updated>1729971728484</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Update command info">
+      <created>1729973426067</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1729973426067</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -316,6 +321,7 @@
     <MESSAGE value="Update image stream" />
     <MESSAGE value="Villager move event" />
     <MESSAGE value="Drop elytra on dragon kill instead of an award" />
-    <option name="LAST_COMMIT_MESSAGE" value="Drop elytra on dragon kill instead of an award" />
+    <MESSAGE value="Update command info" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update command info" />
   </component>
 </project>

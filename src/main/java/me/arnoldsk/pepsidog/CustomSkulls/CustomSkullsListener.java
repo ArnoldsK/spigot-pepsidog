@@ -93,7 +93,7 @@ public class CustomSkullsListener implements Listener {
         if (lastDamageCause == null) return;
         Entity damageCauseEntity = lastDamageCause.getEntity();
         if (damageCauseEntity.getType() != EntityType.PLAYER) return;
-        if (damageCauseEntity == player) return;
+        // if (damageCauseEntity == player) return;
 
         // Create the skull item
         ItemStack skullItem = new ItemStack(Material.PLAYER_HEAD);
