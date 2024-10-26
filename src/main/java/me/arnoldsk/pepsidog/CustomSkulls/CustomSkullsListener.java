@@ -1,10 +1,17 @@
 package me.arnoldsk.pepsidog.CustomSkulls;
 
 import me.arnoldsk.pepsidog.PepsiDog;
+import org.bukkit.GameMode;
 import org.bukkit.Material;
 import org.bukkit.OfflinePlayer;
+import org.bukkit.World;
+import org.bukkit.entity.Entity;
+import org.bukkit.entity.EntityType;
+import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.entity.EntityDamageEvent;
+import org.bukkit.event.entity.PlayerDeathEvent;
 import org.bukkit.event.inventory.PrepareAnvilEvent;
 import org.bukkit.inventory.AnvilInventory;
 import org.bukkit.inventory.ItemStack;
@@ -71,5 +78,32 @@ public class CustomSkullsListener implements Listener {
 
         // Set the skull as the result
         event.setResult(playerSkull);
+    }
+
+    @EventHandler
+    public void onPlayerDeath(PlayerDeathEvent event) {
+        Player player = event.getEntity();
+        World world = player.getWorld();
+
+        // Ignore if player is in creative mode
+        if (player.getGameMode() == GameMode.CREATIVE) return;
+
+        // Ignore if not killed by a player
+        EntityDamageEvent lastDamageCause = player.getLastDamageCause();
+        if (lastDamageCause == null) return;
+        Entity damageCauseEntity = lastDamageCause.getEntity();
+        if (damageCauseEntity.getType() != EntityType.PLAYER) return;
+        if (damageCauseEntity == player) return;
+
+        // Create the skull item
+        ItemStack skullItem = new ItemStack(Material.PLAYER_HEAD);
+        SkullMeta skullMeta = (SkullMeta) skullItem.getItemMeta();
+        assert skullMeta != null;
+        skullMeta.setDisplayName(player.getDisplayName());
+        skullMeta.setOwningPlayer(player);
+        skullItem.setItemMeta(skullMeta);
+
+        // Drop the skull on death
+        world.dropItemNaturally(player.getLocation(), skullItem);
     }
 }

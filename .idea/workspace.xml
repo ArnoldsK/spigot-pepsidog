@@ -9,16 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90206e09-0385-4440-b929-b71350ccb022" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/arnoldsk/pepsidog/Magnet/MagnetCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/arnoldsk/pepsidog/Magnet/MagnetItemData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/arnoldsk/pepsidog/Magnet/MagnetListener.java" afterDir="false" />
+    <list default="true" id="90206e09-0385-4440-b929-b71350ccb022" name="Default Changelist" comment="Add player kill skull drop">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/arnoldsk/pepsidog/OpStick/OpStickCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/arnoldsk/pepsidog/OpStick/OpStickCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/arnoldsk/pepsidog/OpStick/OpStickListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/arnoldsk/pepsidog/OpStick/OpStickListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/arnoldsk/pepsidog/PepsiDog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/arnoldsk/pepsidog/PepsiDog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/arnoldsk/pepsidog/TalismanOfLight/TalismanOfLightListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/arnoldsk/pepsidog/TalismanOfLight/TalismanOfLightListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/arnoldsk/pepsidog/CustomSkulls/CustomSkullsListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/arnoldsk/pepsidog/CustomSkulls/CustomSkullsListener.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622642678241</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Changes to things">
+      <created>1622648654521</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1622648654521</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -248,6 +248,7 @@
     <MESSAGE value="Allow toggling talisman of light" />
     <MESSAGE value="Remove junk" />
     <MESSAGE value="Changes to things" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes to things" />
+    <MESSAGE value="Add player kill skull drop" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add player kill skull drop" />
   </component>
 </project>
