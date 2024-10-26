@@ -143,7 +143,7 @@ public class TalismanOfLightListener implements Listener {
 
     ItemStack inventoryGetTalisman(PlayerInventory inventory) {
         for (ItemStack item : inventory) {
-            if (isItemTalisman(item)) {
+            if (item != null && isItemTalisman(item)) {
                 return item;
             }
         }

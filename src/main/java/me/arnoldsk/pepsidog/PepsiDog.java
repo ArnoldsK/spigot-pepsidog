@@ -5,6 +5,7 @@ import me.arnoldsk.pepsidog.CustomSkulls.CustomSkullsListener;
 import me.arnoldsk.pepsidog.Magnet.MagnetCommand;
 import me.arnoldsk.pepsidog.Magnet.MagnetItemData;
 import me.arnoldsk.pepsidog.Magnet.MagnetListener;
+import me.arnoldsk.pepsidog.ImageMap.ImageMapCommand;
 import me.arnoldsk.pepsidog.NameColors.NameColorsListener;
 import me.arnoldsk.pepsidog.OpStick.OpStickCommand;
 import me.arnoldsk.pepsidog.OpStick.OpStickListener;
@@ -18,6 +19,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.logging.Level;
 
@@ -58,7 +60,7 @@ public final class PepsiDog extends JavaPlugin {
     }
 
     @Override
-    public boolean onCommand(CommandSender sender, org.bukkit.command.Command command, String label, String[] args) {
+    public boolean onCommand(@NotNull CommandSender sender, org.bukkit.command.@NotNull Command command, @NotNull String label, String[] args) {
         try {
             switch (command.getName().toLowerCase()) {
                 case "opstick":
@@ -72,6 +74,9 @@ public final class PepsiDog extends JavaPlugin {
 
                 case "magnet":
                     return new MagnetCommand(this).run(sender, command, label, args);
+
+                case "imagemap":
+                    return new ImageMapCommand(this).run(sender, command, label, args);
             }
         } catch (Exception e) {
             sender.sendMessage(ChatColor.DARK_RED + "Error: command failed");

@@ -9,9 +9,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90206e09-0385-4440-b929-b71350ccb022" name="Default Changelist" comment="Add player kill skull drop">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="90206e09-0385-4440-b929-b71350ccb022" name="Default Changelist" comment="Image map command">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_26_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/arnoldsk/pepsidog/ImageMap/ImageMapCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/arnoldsk/pepsidog/ImageMap/ImageMapRenderer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PepsiDog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PepsiDog.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/arnoldsk/pepsidog/PepsiDog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/arnoldsk/pepsidog/PepsiDog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/arnoldsk/pepsidog/TalismanOfLight/TalismanOfLightListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/arnoldsk/pepsidog/TalismanOfLight/TalismanOfLightListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/PepsiDog-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/PepsiDog-1.0.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +86,7 @@
       <recent name="me.arnoldsk.pepsidog.OpStick" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="me.arnoldsk.pepsidog.MiniMap" />
       <recent name="me.arnoldsk.pepsidog.Magnet" />
     </key>
   </component>
@@ -228,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1729929781905</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Add plugin output to GIT">
+      <created>1729930133148</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1729930133148</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -256,6 +272,8 @@
     <MESSAGE value="Remove junk" />
     <MESSAGE value="Changes to things" />
     <MESSAGE value="Add player kill skull drop" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add player kill skull drop" />
+    <MESSAGE value="Add plugin output to GIT" />
+    <MESSAGE value="Image map command" />
+    <option name="LAST_COMMIT_MESSAGE" value="Image map command" />
   </component>
 </project>

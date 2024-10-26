@@ -4,7 +4,7 @@ main: me.arnoldsk.pepsidog.PepsiDog
 api-version: 1.13
 authors: [ArnoldsK]
 description: Miscellaneous additions for Pepsi Dog server usage
-website: https://arnoldsk.lv
+website: https://pepsidog.lv
 commands:
   opstick:
     description: Server operator command to get a stick that does everything
@@ -18,3 +18,6 @@ commands:
   magnet:
     description: Get the recipe
     usage: magnet
+  imagemap:
+    description: Get a map with the provided image URL
+    usage: imagemap https://i.imgur.com/cat.png
