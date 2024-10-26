@@ -10,16 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="90206e09-0385-4440-b929-b71350ccb022" name="Default Changelist" comment="Image map command">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_26_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/arnoldsk/pepsidog/ImageMap/ImageMapCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/arnoldsk/pepsidog/ImageMap/ImageMapRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PepsiDog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PepsiDog.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/arnoldsk/pepsidog/PepsiDog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/arnoldsk/pepsidog/PepsiDog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/arnoldsk/pepsidog/TalismanOfLight/TalismanOfLightListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/arnoldsk/pepsidog/TalismanOfLight/TalismanOfLightListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/PepsiDog-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/PepsiDog-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -244,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1729930133148</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Image map command">
+      <created>1729941486531</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1729941486531</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
