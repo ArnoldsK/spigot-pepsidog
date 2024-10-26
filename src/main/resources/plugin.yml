@@ -21,3 +21,6 @@ commands:
   imagemap:
     description: Get a map with the provided image URL
     usage: imagemap https://i.imgur.com/cat.png
+  villagermove:
+    description: Get a map with the provided image URL
+    usage: Sneak right click a villager with a signed book containing exact move coordinates. For example "-181 / 102 / -173".

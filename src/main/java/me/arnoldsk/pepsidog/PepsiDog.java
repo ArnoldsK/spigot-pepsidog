@@ -14,6 +14,8 @@ import me.arnoldsk.pepsidog.SoftSpawnProtection.SoftSpawnProtectionListener;
 import me.arnoldsk.pepsidog.TalismanOfLight.TalismanOfLightCommand;
 import me.arnoldsk.pepsidog.TalismanOfLight.TalismanOfLightItemData;
 import me.arnoldsk.pepsidog.TalismanOfLight.TalismanOfLightListener;
+import me.arnoldsk.pepsidog.VillagerMove.VillagerMoveCommand;
+import me.arnoldsk.pepsidog.VillagerMove.VillagerMoveListener;
 import me.arnoldsk.pepsidog.WhereIs.WhereIsCommand;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
@@ -56,6 +58,7 @@ public final class PepsiDog extends JavaPlugin {
         pluginManager.registerEvents(new CustomSkullsListener(this), this);
         pluginManager.registerEvents(new MagnetListener(this), this);
         pluginManager.registerEvents(new ImageMapListener(this), this);
+        pluginManager.registerEvents(new VillagerMoveListener(this), this);
 
         // Add recipes
         getServer().addRecipe(new TalismanOfLightItemData(this).getRecipe());
@@ -89,6 +92,9 @@ public final class PepsiDog extends JavaPlugin {
 
                 case "imagemap":
                     return new ImageMapCommand(this).run(sender, command, label, args);
+
+                case "villagermove":
+                    return new VillagerMoveCommand(this).run(sender, command, label, args);
             }
         } catch (Exception e) {
             sender.sendMessage(ChatColor.DARK_RED + "Error: command failed");
